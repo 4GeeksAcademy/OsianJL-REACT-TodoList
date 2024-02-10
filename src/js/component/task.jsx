@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import "./index.css"
 
 
 export const Task = () => {
@@ -14,22 +15,23 @@ export const Task = () => {
             setTaskList(taskList.concat(task));
             setTask("");
         }
-
-
-
     }
 
-    return (
-        <div>
+    
 
-            <input type="text" className="task-inputs" placeholder="what needs to be done?" onKeyDown={createList} onChange={(e) => setTask(e.target.value)} value={task} />
-            <div>
+    return (
+        <div className='container d-flex  fs-1'><span className='todos'>todos</span>
+            <div className='input-div'>
+                <input type="text" className="input-task" placeholder="what needs to be done?" onKeyDown={createList} onChange={(e) => setTask(e.target.value)} value={task} />
+
                 <div>
-                    <ul>
-                    {taskList.map((item, index) =>  <li key={index}>{item}</li> )}
+                    <ul style={{listStyle:"none"}}>
+                        {taskList.map((item, index) => <li className='list-unit' key={index}>{item}<a href='#' >x</a></li>)}
                     </ul>
                 </div>
+
             </div>
+
         </div>
 
 
@@ -37,9 +39,10 @@ export const Task = () => {
 
 
 
-    )
-}
 
+    )
+
+    }
 
 export default Task
 
