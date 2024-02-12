@@ -26,7 +26,11 @@ export const Task = () => {
 
                 <div>
                     <ul style={{listStyle:"none"}}>
-                        {taskList.map((item, index) => <li className='list-unit' key={index}>{item}<a href='#' >x</a></li>)}
+                        {taskList.map((item, index) => <li className='list-unit' key={index}>{item}<a className='close-btn' href='#' >x</a></li>)}
+                        <div className='bottomCard'>4 items left</div>
+                        <div className='bottomCard1'></div>
+                        <div className='bottomCard2'></div>
+                     
                     </ul>
                 </div>
 
