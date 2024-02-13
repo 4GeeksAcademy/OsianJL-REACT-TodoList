@@ -1,6 +1,5 @@
 * {
   font-size: 25px;
-  /* font-family: 'Courier New', Courier, monospace */
 }
 
 
@@ -62,6 +61,7 @@ ul {
   margin: 0;
   padding-right: 10px;
   padding-left: 0;
+  list-style: none;
 
 }
 li {

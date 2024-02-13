@@ -22,14 +22,19 @@ export const Task = () => {
     return (
         <div className='container d-flex  fs-1'><span className='todos'>todos</span>
             <div className='input-div'>
-                <input type="text" className="input-task" placeholder="what needs to be done?" onKeyDown={createList} onChange={(e) => setTask(e.target.value)} value={task} />
+                <input type="text" className="input-task" 
+                placeholder="what needs to be done?" onKeyDown={createList} 
+                onChange={(e) => setTask(e.target.value)} value={task} />
 
                 <div>
-                    <ul style={{ listStyle: "none" }}>
+                    <ul>
                         {taskList.map((item, index) =>
 
                         (<li className='list-unit' key={index}>
-                            {item}<a className='close-btn' href='#' onClick={() => setTaskList(taskList.filter((t, currentIndex) => index !== currentIndex))}>x</a>
+                            {item}<a className='close-btn' href='#'
+                            onClick={() => 
+                            setTaskList(taskList.filter((t, currentIndex) => 
+                            index !== currentIndex))}>x</a>
                         </li>))}
 
                         <div className='bottomCard'>{taskList.length} items left</div>
@@ -56,4 +61,3 @@ export const Task = () => {
 export default Task
 
 
-// {taskList.map((item, index) => { <li key={index}>{item}</li> })}
