@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+
 * {
   font-size: 25px;
 }
@@ -13,9 +16,9 @@
   text-align: left;
   font-weight: lighter;
   padding: 10px;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-  opacity: .4;
+  opacity: 0.5;
   border-bottom: 0.5px solid rgb(190, 202, 214);
 
 
@@ -25,33 +28,38 @@
 .container {
   width: 600px;
   height: 700px;
-  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: space-around;
-  align-items: center
+  align-items: center;
+
 }
 
 .todos {
   font-size: 80px;
-  opacity: .3;
-  font-family: 'Montserrat', sans-serif;
+  opacity: .4;
   color: rgb(154, 76, 133);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 100;
+  font-style: normal;
 }
 
-.list-unit {
+
+
+.listado {
   display: flex;
   justify-content: space-between;
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
 }
 
 .close-btn {
   font-style: italic;
   visibility: hidden;
-  
+
 }
 
-.list-unit:hover .close-btn {
+.listado:hover .close-btn {
   text-decoration: none;
   color: rgb(226, 77, 102);
   visibility: visible;
@@ -59,16 +67,17 @@
 
 ul {
   margin: 0;
-  padding-right: 10px;
   padding-left: 0;
   list-style: none;
 
+
 }
+
 li {
   padding: 10px;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 20px;
-  opacity: .4;
+  opacity: 0.5;
   border-bottom: 0.5px solid rgb(190, 202, 214);
 
 }
@@ -79,50 +88,40 @@ li {
   justify-content: center;
   flex-direction: column;
   box-shadow: 0 0.2px 1px rgba(0, 0, 0, 0.5);
- 
+
 }
 
 .bottomCard {
-  
+
   left: 440px;
   margin-right: 5px;
   width: 400px;
   height: 25px;
-  background:linear-gradient(to bottom, #ffffff, #e0e0e0);
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
   border-top: 2px solid transparent black;
   padding: 8px;
-  font-family:Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 10px;
-  opacity: .4;
+  opacity: 0.5;
   z-index: 100;
-  
+
+
 
 
 }
 
 .bottomCard1 {
-  position: absolute;
-  left: 450px;
-  margin-right: 5px;
-  width: 360px;
-  height: 14px;
-  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
-  box-shadow: 0 0.2px 1px rgba(0, 0, 0, 0.5);
-  z-index: 50;
-
-
-}
-
-.bottomCard2 {
-  position: absolute;
-  left: 440px;
-  margin-right: 5px;
   width: 380px;
   height: 7px;
   background: linear-gradient(to bottom, #ffffff, #e0e0e0);
-  z-index: 75;
   box-shadow: 0 0.2px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
+}
 
-
-
+.bottomCard2 {
+  width: 350px;
+  height: 4px;
+  background: linear-gradient(to bottom, #ffffff, #e0e0e0);
+  box-shadow: 0 0.2px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0.5;
 }
